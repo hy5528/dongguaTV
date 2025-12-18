@@ -498,7 +498,7 @@ app.post('/api/auth/verify', (req, res) => {
     }
 
     if (inputHash === PASSWORD_HASH) {
-        res.json({ success: true, token: 'session_token_placeholder' });
+        res.json({ success: true, token: 'session_token_placeholder', passwordHash: PASSWORD_HASH });
     } else {
         res.json({ success: false });
     }

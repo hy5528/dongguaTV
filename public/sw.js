@@ -1,6 +1,6 @@
 // Service Worker with Image Caching for dongguaTV
-// v8: Fixed cross-origin (m3u8 video) request handling
-const CACHE_VERSION = 'v8';
+// v9: Removed client-side SHA256 to fix login on some browsers
+const CACHE_VERSION = 'v9';
 const STATIC_CACHE = 'donggua-static-' + CACHE_VERSION;
 const IMAGE_CACHE = 'donggua-images-' + CACHE_VERSION;
 
